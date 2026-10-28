@@ -6,67 +6,70 @@
     <title>Portfolio</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link href="./src/output.css" rel="stylesheet">
-    <script src="myScript.js"></script>
-    <style></style>
+    <script src="./myScript.js"></script>
 </head>
 
-<body class=" bg-gray-800 min-h-screen m-0 font-mono  text-white">
+<body class=" bg-gray-600 min-h-screen m-0 font-mono  text-white">
     <!-- Contenitore principale che coprire tutta l'altezza dello schermo -->
-    <div class="min-h-screen flex flex-col  items-center  bg-gray-800">
+    <div class="min-h-screen flex flex-col  items-center ">
 
         <!-- HEADER -->
-        <header class="flex flex-row items-center justify-between w-full px-6 py-4 h-50  max-w-400">
-            <a class="font-medium " href="./index.html">
+        <header class="flex flex-row items-center w-full justify-between px-6 py-4 h-50  max-w-400 bg-gray-600 ">
+            <a class=" basis-lg font-medium" href="./index.html">
                 <h1 class="text-3xl font-bold">
                     <> Bellero Luca <>
                 </h1>
             </a>
-            <nav class="flex flex-row items-center gap-4">
-                <a class="p-4 hover:text-gray-500 " href="./index.html">HTML-TAILWINDCSS-JAVASCRIPT</a>
-                <a class="p-4 hover:text-gray-500 " href="#">REACT-NODE.JS</a>
-                <a class="p-4 hover:text-gray-500 " href="#">REACT-PYTHON</a>
+            <nav class=" basis-xl flex flex-row items-center gap-4">
+                <a class="p-3 hover:text-gray-500 " href="./index.html">HTML-TAILWINDCSS-JAVASCRIPT</a>
+                <a class="p-3 hover:text-gray-500 " href="#">REACT-NODE.JS</a>
+                <a class="p-3 hover:text-gray-500 " href="#">REACT-PYTHON</a>
             </nav>
         </header>
 
-        <hr>
-        <main class="flex-1 items-center px-8 py-6  mx-auto w-full max-w-400 bg-gray-800">
-            <div class="flex flex-row gap-4 items-center">
-                <div class="basis-xl mt-10 pr-40 pl-10 ">
-                    <h1 class="text-6xl font-bold">Sono Luca, Full-Stack & Automation Engineer!</h1>
-                    <p class="text-lg mt-2">Laureato in Informatica.<br>
-                        Specializzato nello sviluppo di software industriale, automazione e web app moderne.</p>
-                </div>
-                <div class="basis-lg ">
-                    <p class="text-gray-300">Questo portfolio raccoglie i miei progetti e le mie competenze: <br>
-                        dalla programmazione di sistemi PLC, HMI e SCADA fino alla creazione di applicazioni web
-                        full-stack con React, Node.js e Python.</p>
 
-                    <p class="text-gray-300 pt-5">Cerco di migliorare costantemente le mie competenze e di rimanere
-                        aggiornato sulle ultime tendenze tecnologiche, grazie alla mia passione per l'informatica e la
-                        tecnologia.</p>
-                </div>
-            </div>
-            <div class="flex flex-row gap-4 items-center mt-30 ">
-                <h3 class="text-xl font-bold">Hard skills:</h3>
+        <main class="flex-1 items-center px-8 py-6  mx-auto w-full max-w-400 bg-gray-600">
+            <div class="flex flex-col items-center">
+                <div class="flex flex-row gap-4 items-center justify-between">
+                    <div class="basis-xl mt-10 pr-40 pl-10 ">
+                        <h1 class="text-5xl font-bold">Sono Luca, Full-Stack & Automation Engineer!</h1>
+                        <p class="text-lg mt-2">Laureato in Informatica.<br>
+                            Specializzato nello sviluppo di software industriale, automazione e web app moderne.</p>
+                    </div>
+                    <div class="basis-lg  ">
+                        <p class="text-gray-300">Questo portfolio raccoglie i miei progetti e le mie competenze: <br>
+                            dalla programmazione di sistemi PLC, HMI e SCADA fino alla creazione di applicazioni web
+                            full-stack con React, Node.js e Python.</p>
 
-                <div id="skills-container" class="flex flex-row gap-4">
-                    <script>
-                        renderSkills();
-                    </script>
+                        <p class="text-gray-300 pt-5">Cerco di migliorare costantemente le mie competenze e di rimanere
+                            aggiornato sulle ultime tendenze tecnologiche, grazie alla mia passione per l'informatica e
+                            la
+                            tecnologia.</p>
+                    </div>
+                </div>
+                <div class="flex flex-row gap-4 items-center mt-30 ">
+                    <h3 class="text-xl font-bold">Hard skills:</h3>
+
+                    <div id="skills-container" class="flex flex-row gap-4">
+                        <script>
+                            renderSkills();
+                        </script>
+                    </div>
                 </div>
             </div>
         </main>
 
-        <!-- FOOTER (resterà sempre in fondo) -->
-        <footer class="flex flex-row justify-between items-center w-full px-8 py-4 bg-gray-900 text-sm max-w-400 h-70">
-            <h2 class="font-medium">Il codice prodotto per questo sito è stato interamente <br> realizzato dal
-                sottoscritto senza l'ausilio di modelli LLM</h2>
-            <div class="flex gap-4">
-                <a class="p-4 hover:text-gray-500 " href="./index.html">HTML-TAILWINDCSS-JAVASCRIPT</a>
-                <a class="p-4 hover:text-gray-500 " href="#">REACT-NODE.JS</a>
-                <a class="p-4 hover:text-gray-500 " href="#">REACT-PYTHON</a>
-            </div>
-        </footer>
+        <div class="flex flex-col items-center w-full  bg-gray-900">
+            <footer class="flex flex-row justify-between items-center  px-8 py-4 bg-gray-900 text-sm max-w-400 h-70">
+                <h2 class="font-medium">Il codice prodotto per questo sito è stato interamente <br> realizzato dal
+                    sottoscritto senza l'ausilio di modelli LLM</h2>
+                <div class="flex gap-4">
+                    <a class="p-4 hover:text-gray-500 " href="./index.html">HTML-TAILWINDCSS-JAVASCRIPT</a>
+                    <a class="p-4 hover:text-gray-500 " href="#">REACT-NODE.JS</a>
+                    <a class="p-4 hover:text-gray-500 " href="#">REACT-PYTHON</a>
+                </div>
+            </footer>
+        </div>
 
     </div>
 </body>

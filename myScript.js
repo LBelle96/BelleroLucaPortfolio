@@ -7,7 +7,9 @@ function renderSkills() {
         { name: "Node.js", icon: "./images/nodedotjs.svg" },
         { name: "Python", icon: "./images/python.svg" },
         { name: "Rockwell Automation", icon: "./images/rockwellautomation.svg" },
-        { name: "Schneider Electric", icon: "./images/schneiderelectric.svg" }
+        { name: "Schneider Electric", icon: "./images/schneiderelectric.svg" },
+        { name: "Git", icon: "./images/git.svg" },
+        { name: "GitHub", icon: "./images/github.svg" }
     ];
 
     // Seleziona il contenitore HTML specifico
