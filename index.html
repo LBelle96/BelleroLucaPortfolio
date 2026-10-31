@@ -20,13 +20,28 @@
                     <> Bellero Luca <>
                 </h1>
             </a>
-            <nav class=" basis-xl flex flex-row items-center gap-4">
+
+            <nav class="hidden md:flex basis-xl  flex-row items-center gap-4">
                 <a class="p-3 hover:text-gray-500 " href="./index.html">HTML-TAILWINDCSS-JAVASCRIPT</a>
                 <a class="p-3 hover:text-gray-500 " href="#">REACT-NODE.JS</a>
                 <a class="p-3 hover:text-gray-500 " href="#">REACT-PYTHON</a>
             </nav>
+
+            <button id="menu-button" class="basis-sm p-2 bg-gray-700 rounded-md hover:bg-gray-500 md:hidden"
+                onclick="toggleMobileMenu()">
+                Menu
+            </button>
+
+
+
         </header>
 
+        <div id="mobile-menu"
+            class="  flex flex-col md:hidden px-4 pb-4 space-y-2 bg-slate-800 border-t border-slate-700">
+            <a class="p-3 hover:text-gray-500 " href="./index.html">HTML-TAILWINDCSS-JAVASCRIPT</a>
+            <a class="p-3 hover:text-gray-500 " href="#">REACT-NODE.JS</a>
+            <a class="p-3 hover:text-gray-500 " href="#">REACT-PYTHON</a>
+        </div>
 
         <main class="flex-1 items-center px-8 py-6  mx-auto w-full max-w-400 bg-gray-600">
             <div class="flex flex-col items-center">
@@ -51,9 +66,7 @@
                     <h3 class="text-xl font-bold">Hard skills:</h3>
 
                     <div id="skills-container" class="flex flex-row gap-4">
-                        <script>
-                            renderSkills();
-                        </script>
+
                     </div>
                 </div>
             </div>
@@ -73,5 +86,7 @@
 
     </div>
 </body>
+
+
 
 </html>

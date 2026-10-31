@@ -14,7 +14,8 @@ function renderSkills() {
 
     // Seleziona il contenitore HTML specifico
     const container = document.getElementById("skills-container");
-    
+
+    // Debug: verifica se il contenitore è stato trovato
     // Se per caso nella pagina corrente non c'è questo div, esce per evitare errori
     if (!container) return;
 
@@ -39,3 +40,22 @@ function renderSkills() {
         container.appendChild(figure);
     });
 }
+
+function toggleMobileMenu() {
+    
+    const mobilemenu = document.getElementById("mobile-menu");
+    if (mobilemenu.classList.contains("hidden")) {
+        mobilemenu.classList.remove("hidden");
+    } else {
+        mobilemenu.classList.add("hidden");
+    }
+
+
+
+
+
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    renderSkills();
+});
