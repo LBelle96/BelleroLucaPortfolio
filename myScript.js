@@ -59,3 +59,11 @@ function toggleMobileMenu() {
 document.addEventListener("DOMContentLoaded", () => {
     renderSkills();
 });
+
+window.addEventListener("resize", () => {
+    const btn = document.getElementById("menu-button");
+    const mobilemenu = document.getElementById("mobile-menu");
+    if (window.innerWidth >= 768){
+         mobilemenu.classList.add("hidden");
+         }
+})

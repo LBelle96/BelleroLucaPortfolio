@@ -14,26 +14,21 @@
     <div class="min-h-screen flex flex-col  items-center ">
 
         <!-- HEADER -->
-        <header class="flex flex-row items-center w-full justify-between px-6 py-4 h-50  max-w-400 bg-gray-600 ">
+        <header class="flex flex-row items-center w-full justify-between px-6 py-4 h-50  max-w-400 bg-gray-800 ">
             <a class=" basis-lg font-medium" href="./index.html">
                 <h1 class="text-3xl font-bold">
                     <> Bellero Luca <>
                 </h1>
             </a>
-
             <nav class="hidden md:flex basis-xl  flex-row items-center gap-4">
                 <a class="p-3 hover:text-gray-500 " href="./index.html">HTML-TAILWINDCSS-JAVASCRIPT</a>
                 <a class="p-3 hover:text-gray-500 " href="#">REACT-NODE.JS</a>
                 <a class="p-3 hover:text-gray-500 " href="#">REACT-PYTHON</a>
             </nav>
-
-            <button id="menu-button" class="basis-sm p-2 bg-gray-700 rounded-md hover:bg-gray-500 md:hidden"
+            <button id="menu-button" class="basis-sm p-2 bg-gray-700 rounded-md hover:bg-gray-500  md:hidden"
                 onclick="toggleMobileMenu()">
                 Menu
             </button>
-
-
-
         </header>
 
         <div id="mobile-menu"
@@ -43,32 +38,80 @@
             <a class="p-3 hover:text-gray-500 " href="#">REACT-PYTHON</a>
         </div>
 
-        <main class="flex-1 items-center px-8 py-6  mx-auto w-full max-w-400 bg-gray-600">
-            <div class="flex flex-col items-center">
-                <div class="flex flex-row gap-4 items-center justify-between">
-                    <div class="basis-xl mt-10 pr-40 pl-10 ">
-                        <h1 class="text-5xl font-bold">Sono Luca, Full-Stack & Automation Engineer!</h1>
-                        <p class="text-lg mt-2">Laureato in Informatica.<br>
+        <main class="flex-1 flex-col items-center px-8 py-6  mx-auto w-full max-w-400 bg-gray-600">
+
+
+            <div
+                class="w-full max-w-400 mx-auto bg-gray-800 rounded-xl shadow-lg mt-10 p-6 md:p-10 flex flex-col gap-8">
+
+                <!-- Sezione superiore: Titolo e Descrizione (Affiancati su desktop, in colonna su mobile) -->
+                <div class="flex flex-col md:flex-row gap-8 items-start justify-between">
+
+                    <!-- Colonna Titolo -->
+                    <div class="md:w-2/5">
+                        <h1 class="text-3xl md:text-5xl font-bold">Sono Luca, Full-Stack & Automation Engineer!</h1>
+                        <p class="text-lg mt-4 text-gray-300">Laureato in Informatica.<br>
                             Specializzato nello sviluppo di software industriale, automazione e web app moderne.</p>
                     </div>
-                    <div class="basis-lg  ">
-                        <p class="text-gray-300">Questo portfolio raccoglie i miei progetti e le mie competenze: <br>
-                            dalla programmazione di sistemi PLC, HMI e SCADA fino alla creazione di applicazioni web
-                            full-stack con React, Node.js e Python.</p>
 
-                        <p class="text-gray-300 pt-5">Cerco di migliorare costantemente le mie competenze e di rimanere
-                            aggiornato sulle ultime tendenze tecnologiche, grazie alla mia passione per l'informatica e
-                            la
-                            tecnologia.</p>
+                    <!-- Colonna Descrizione -->
+                    <div class="md:w-3/5 text-gray-300 flex flex-col gap-4">
+                        <p>Questo portfolio raccoglie i miei progetti e le mie competenze: dalla programmazione di
+                            sistemi PLC, HMI e SCADA fino alla creazione di applicazioni web full-stack con React,
+                            Node.js e Python.</p>
+                        <p>Cerco di migliorare costantemente le mie competenze e di rimanere aggiornato sulle ultime
+                            tendenze tecnologiche, grazie alla mia passione per l'informatica e la tecnologia.</p>
+                    </div>
+
+                </div>
+
+                <!-- Sezione Hard Skills -->
+                <div class="flex flex-col md:flex-row gap-4 md:items-center mt-6 border-t border-gray-700 pt-6">
+                    <h3 class="text-xl font-bold shrink-0">Hard skills:</h3>
+
+                    <!-- Contenitore dinamico popolato da JS -->
+                    <div id="skills-container" class="flex flex-wrap gap-2">
+                        <!-- Le skill inserite da JavaScript appariranno qui in modo flessibile -->
                     </div>
                 </div>
-                <div class="flex flex-row gap-4 items-center mt-30 ">
-                    <h3 class="text-xl font-bold">Hard skills:</h3>
 
-                    <div id="skills-container" class="flex flex-row gap-4">
+            </div>
 
-                    </div>
+
+            <!-- sezione time line sviluppo professionale e personale -->
+            <div
+                class="w-full max-w-400 mx-auto bg-gray-800 rounded-xl shadow-lg mt-10 p-6 md:p-10 flex flex-col md:flex-row gap-8 items-start">
+                <!-- Titolo della sezione -->
+                <div class="md:w-1/3">
+                    <h2 class="text-2xl font-bold text-white border-l-4 border-blue-500 pl-4">
+                        Sviluppo personale e professionale
+                    </h2>
                 </div>
+
+                <!-- Timeline / Lista degli eventi -->
+                <ul class="md:w-2/3 flex flex-col gap-4 text-gray-300">
+                    <li class="bg-gray-700/50 p-4 rounded-lg border border-gray-700">
+                        <span class="font-bold text-blue-400">2015</span> - Diplomato in Elettronica ed Elettrotecnica
+                        presso l'Istituto Luigi Einaudi di Alba (Votazione: 84/100)
+                    </li>
+                    <li class="bg-gray-700/50 p-4 rounded-lg border border-gray-700">
+                        <span class="font-bold text-blue-400">2015</span> - Assunto presso Ferrero S.p.A. come
+                        manutentore di impianti industriali
+                    </li>
+                    <li class="bg-gray-700/50 p-4 rounded-lg border border-gray-700">
+                        <span class="font-bold text-blue-400">2018</span> - Manutentore di impianti industriali con
+                        specializzazione in sviluppo software di automazione industriale
+                    </li>
+                    <li class="bg-gray-700/50 p-4 rounded-lg border border-gray-700">
+                        <span class="font-bold text-blue-400">2024</span> - Assunto presso Ferrero Technical Services
+                        come elettricista trasfertista
+                    </li>
+                    <li class="bg-gray-700/50 p-4 rounded-lg border border-gray-700">
+                        <span class="font-bold text-blue-400">2025</span> - Laureato in Informatica presso l'Università
+                        Mercatorum - Indirizzo Ingegneria Informatica (Votazione: 92/110)
+                    </li>
+                </ul>
+
             </div>
         </main>
 
